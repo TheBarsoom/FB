@@ -1,0 +1,3 @@
+
+    Client packages
+    npm i axios react-spinners react-responsive react-moment react-loading-skeleton js-cookie emoji-picker-react file-server yup formik react-router-dom redux redux-devtools-extension  react-redux react-easy-crop
