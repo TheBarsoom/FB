@@ -18,8 +18,9 @@ app.use(fileUpload());
 app.use(express.json());
 
 const PORT = process.env.PORT || 7000
-
-;(async function server() {
+//routes
+console.log(readdirSync("./src/routes"));
+readdirSync("./src/routes").map((r) => app.use("/", require("./src/routes/" + r)));;(async function server() {
     try {
       dbConnect();
       app.listen( PORT, () => {
