@@ -1,3 +1,27 @@
 
-    Client packages
-    npm i axios react-spinners react-responsive react-moment react-loading-skeleton js-cookie emoji-picker-react file-server yup formik react-router-dom redux redux-devtools-extension  react-redux react-easy-crop
+ Client packages
+ npm create vite@latest
+ npm i axios react-spinners react-responsive react-moment react-loading-skeleton js-cookie emoji-picker-react file-server yup formik react-router-dom redux redux-devtools-extension  react-redux react-easy-crop
+
+ Server packages
+npm init -y
+npm i nodemon nodemailer bcrypt cloudinary dotenv express express-fileupload googleapis jsonwebtoken mongodb mongoose
+
+sudo service mongod restart
+
+
+https://developers.google.com/oauthplayground/
+
+Your Client Id: 1058454500949-fdkpi0mb89igvjkheen3nd9o309veqo2.apps.googleusercontent.com
+Your Client Secret : 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
+
+
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/item/:itemId" element={<ItemDetails />} />
+          <Route path="/products" element={<Checkout />} />
+          <Route path="/contact" element={<Confirmation />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes> */}
